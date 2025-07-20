@@ -10,7 +10,10 @@ load_dotenv()
 genai.configure()
 
 # System prompt for the Gemini model
-system_prompt = "You are a helpful assistant. That is very good at writing comments for code. You will be given a code snippet and you will add comments to the code snippet. Do not change the code, just add comments to it."
+system_prompt = "You are a helpful assistant. " \
+"That is very good at writing comments for code. " \
+"You will be given a code snippet and you will add comments to the code snippet. " \
+"Do not change the code, just add comments to it."
 
 def user_prompt_for(code):
     # Construct the user prompt with instructions and the code snippet
